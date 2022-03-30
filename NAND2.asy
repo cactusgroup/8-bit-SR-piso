@@ -1,0 +1,19 @@
+Version 4
+SymbolType CELL
+LINE Normal -32 32 -32 -32
+LINE Normal 0 32 -32 32
+LINE Normal 0 -32 -32 -32
+CIRCLE Normal 48 8 32 -8
+ARC Normal -32 -32 32 32 0 32 0 -32
+WINDOW 39 39 27 Center 0
+WINDOW 0 14 -29 Left 0
+SYMATTR SpiceLine size = 1
+PIN -32 -16 LEFT 8
+PINATTR PinName I1
+PINATTR SpiceOrder 1
+PIN -32 16 LEFT 8
+PINATTR PinName I2
+PINATTR SpiceOrder 2
+PIN 48 0 RIGHT 16
+PINATTR PinName O
+PINATTR SpiceOrder 3
