@@ -1,0 +1,28 @@
+Version 4
+SymbolType BLOCK
+LINE Normal -16 0 -32 0
+LINE Normal -16 -12 -16 0
+LINE Normal 16 -12 -16 -12
+LINE Normal 16 0 16 -12
+LINE Normal 32 0 16 0
+LINE Normal -16 7 -16 0
+LINE Normal 16 7 -16 7
+LINE Normal 16 0 16 7
+LINE Normal 16 9 -16 9
+LINE Normal 16 -16 -16 -16
+CIRCLE Normal 4 16 -4 9
+WINDOW 39 36 7 Center 0
+WINDOW 0 16 -10 Left 0
+SYMATTR SpiceLine size = 1
+PIN -32 0 NONE 8
+PINATTR PinName I
+PINATTR SpiceOrder 1
+PIN 32 0 NONE 8
+PINATTR PinName O
+PINATTR SpiceOrder 2
+PIN 0 -16 NONE 8
+PINATTR PinName CLK
+PINATTR SpiceOrder 3
+PIN 0 16 NONE 8
+PINATTR PinName CLK_n
+PINATTR SpiceOrder 4
