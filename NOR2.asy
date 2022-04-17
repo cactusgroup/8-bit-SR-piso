@@ -8,7 +8,7 @@ CIRCLE Normal 32 5 23 -5
 ARC Normal -132 -56 -20 56 -32 32 -32 -32
 ARC Normal -80 -76 28 32 -28 32 24 0
 ARC Normal -80 -32 28 76 24 0 -28 -32
-WINDOW 0 -12 -32 Left 2
+WINDOW 0 -12 -32 Left 0
 WINDOW 39 12 30 Center 0
 SYMATTR SpiceLine size = 1
 PIN -32 -16 LEFT 8

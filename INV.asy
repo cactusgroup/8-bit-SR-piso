@@ -6,6 +6,7 @@ LINE Normal -32 32 -32 -32
 CIRCLE Normal 32 8 16 -8
 WINDOW 0 -16 -16 Left 0
 WINDOW 39 -16 16 Left 0
+SYMATTR SpiceLine size = 1
 PIN -32 0 LEFT 8
 PINATTR PinName I
 PINATTR SpiceOrder 1
