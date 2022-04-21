@@ -1,0 +1,38 @@
+* C:\Users\Server\Dropbox\Y8-Sp\new-ee457\hw-n-proj\Project\8-bit-SR-piso\Testbench.asc
+V1 CLK 0 PULSE(0 3.3 0 1n 1n 10n 20n 1)
+XX1 CLK CK vdd 0 tg params: size = 1
+V2 vdd 0 3.3
+XX2 CLK CK_n inv params: size = {sz}
+M1 vdd CK 0 0 NM W=1u L=0.35u
+M2 vdd CK 0 0 NM W=1u L=0.35u
+M3 vdd CK_n 0 0 NM W=1u L=0.35u
+M4 vdd CK_n 0 0 NM W=1u L=0.35u
+M5 0 CK_n vdd vdd PM W=1u L=0.35u
+M6 0 CK_n vdd vdd PM W=1u L=0.35u
+M7 0 CK vdd vdd PM W=1u L=0.35u
+M8 0 CK vdd vdd PM W=1u L=0.35u
+
+* block symbol definitions
+.subckt tg I O CLK CLK_n
+M1 I CLK O O NM l=0.35u w={size*0.35u}
+M2 O CLK_n I I PM l=0.35u w={3.4*size*0.35u}
+.include ee457_035.lib
+.param size=1
+.ends tg
+
+.subckt inv I O
+M1 O I 0 0 NM l=0.35u w={0.35u*size}
+M2 O I vdd vdd PM l=0.35u w={3.4*size*0.35u}
+V1 vdd 0 3.3
+.include ee457_035.lib
+.param size=1
+.ends inv
+
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\Server\Documents\LTspiceXVII\lib\cmp\standard.mos
+.include ee457_035.lib
+.tran 20n
+.step param sz list 1 2 3 10
+.backanno
+.end
