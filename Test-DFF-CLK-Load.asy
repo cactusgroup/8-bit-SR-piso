@@ -1,0 +1,16 @@
+Version 4
+SymbolType BLOCK
+LINE Normal 64 -7 64 -32
+LINE Normal 80 -7 48 -7
+LINE Normal 80 7 48 7
+LINE Normal 64 7 64 32
+RECTANGLE Normal -48 -40 112 41
+WINDOW 0 29 -37 Bottom 2
+WINDOW 39 62 31 Center 0
+SYMATTR SpiceLine size = 1
+PIN -48 -16 LEFT 8
+PINATTR PinName CK
+PINATTR SpiceOrder 1
+PIN -48 16 LEFT 8
+PINATTR PinName CK_n
+PINATTR SpiceOrder 2

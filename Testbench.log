@@ -1,5 +1,11 @@
 Circuit: * C:\Users\Server\Dropbox\Y8-Sp\new-ee457\hw-n-proj\Project\8-bit-SR-piso\Testbench.asc
 
+WARNING: Node NC_01 is floating.
+
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
 Warning: Pd = 0 is less than W.
 Warning: Ps = 0 is less than W.
 Warning: Pd = 0 is less than W.
@@ -14,24 +20,23 @@ Warning: Pd = 0 is less than W.
 Warning: Ps = 0 is less than W.
 Direct Newton iteration for .op point succeeded.
 .step sz=1
-.step sz=2
-.step sz=3
-.step sz=10
+.step sz=5
+.step sz=100
 
-Date: Tue Apr 19 01:10:23 2022
-Total elapsed time: 0.483 seconds.
+Date: Thu Apr 21 18:33:18 2022
+Total elapsed time: 0.550 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 2190
-traniter = 2179
-tranpoints = 1074
-accept = 1065
-rejected = 9
-matrix size = 8
+totiter = 2230
+traniter = 2224
+tranpoints = 1091
+accept = 1068
+rejected = 23
+matrix size = 15
 fillins = 0
 solver = Normal
-Matrix Compiler1: 246 bytes object code size  0.1/0.1/[0.1]
-Matrix Compiler2: 608 bytes object code size  0.1/0.2/[0.1]
+Matrix Compiler1: 542 bytes object code size  0.2/0.1/[0.1]
+Matrix Compiler2: 1.05 KB object code size  0.1/0.2/[0.1]
 
