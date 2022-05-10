@@ -1,136 +1,124 @@
 * C:\Users\Server\Dropbox\Y8-Sp\new-ee457\hw-n-proj\Project\8-bit-SR-piso\Testbench-SR.asc
-XX1 PL_n CP vdd 0 vdd 0 Q_n 0 Q vdd vdd 0 vdd 0 NC_01 vdd sr
+XX1 PL_n CP vdd 0 vdd 0 Q_n 0 Q 0 vdd 0 vdd 0 NC_01 vdd sr
 V1 vdd 0 3.3
 V2 CP 0 PULSE(0 3.3 0 1n 1n 5n 10n)
 V3 PL_n 0 PULSE(3.3 0 5n 1n 1n 20n)
+C1 Q_n 0 15p
+C2 Q 0 15p
 
 * block symbol definitions
 .subckt sr PL_n CP D4 D5 D6 D7 Q7_n GND Q7 DS D0 D1 D2 D3 CE_n VCC
-XX1 N009 N010 CLK N005 N013 NC_01 d-ff
-XX2 N010 N011 CLK N006 N014 NC_02 d-ff
-XX3 N011 N012 CLK N007 N015 NC_03 d-ff
-XX4 N012 Q3 CLK N008 N016 NC_04 d-ff
-XX5 Q3 N030 CLK N026 N033 NC_05 d-ff
-XX6 N030 N031 CLK N027 N034 NC_06 d-ff
-XX7 N031 N032 CLK N028 N035 NC_07 d-ff
-XX8 N032 Q CLK N029 N036 Q_n d-ff
-XX11 N001 PL N005 nand2 params: size = 1
-XX12 N002 PL N006 nand2 params: size = 1
-XX13 N003 PL N007 nand2 params: size = 1
-XX14 N004 PL N008 nand2 params: size = 1
-XX15 D0 N001 schmitt
-XX16 D1 N002 schmitt
-XX17 D2 N003 schmitt
-XX18 D3 N004 schmitt
-XX19 PL N017 N013 nand2 params: size = 1
-XX20 PL N018 N014 nand2 params: size = 1
-XX21 PL N019 N015 nand2 params: size = 1
-XX22 PL N020 N016 nand2 params: size = 1
-XX23 N001 N017 inv params: size = 1
-XX24 N002 N018 inv params: size = 1
-XX25 N003 N019 inv params: size = 1
-XX26 N004 N020 inv params: size = 1
-XX27 DS N009 schmitt
-XX28 N022 PL N026 nand2 params: size = 1
-XX29 N023 PL N027 nand2 params: size = 1
-XX30 N024 PL N028 nand2 params: size = 1
-XX31 N025 PL N029 nand2 params: size = 1
-XX32 PL N040 N036 nand2 params: size = 1
-XX33 PL N039 N035 nand2 params: size = 1
-XX34 PL N038 N034 nand2 params: size = 1
-XX35 PL N037 N033 nand2 params: size = 1
-XX36 D4 N022 schmitt
-XX37 D5 N023 schmitt
-XX38 D6 N024 schmitt
-XX39 D7 N025 schmitt
-XX40 N022 N037 inv params: size = 1
-XX41 N023 N038 inv params: size = 1
-XX42 N024 N039 inv params: size = 1
-XX43 N025 N040 inv params: size = 1
-XX44 PL_n PL inv params: size = 1
-XX9 CP N021 inv params: size = 1
-XX10 N021 CLK inv params: size = 4.405
-XX47 Q N041 inv params: size = 1
-XX48 N041 N042 inv params: size = 3.833
-XX49 N042 N043 inv params: size = 14.69
-XX50 N043 N044 inv params: size = 56.31
-XX51 N044 N045 inv params: size = 215.9
-XX52 N045 N046 inv params: size = 827.4
-XX53 N046 N047 inv params: size = 3171
-XX54 N047 Q7 inv params: size = 12155
-XX55 Q_n N048 inv params: size = 1
-XX56 N048 N049 inv params: size = 3.833
-XX57 N049 N050 inv params: size = 14.69
-XX58 N050 N051 inv params: size = 56.31
-XX59 N051 N052 inv params: size = 215.9
-XX60 N052 N053 inv params: size = 827.4
-XX61 N053 N054 inv params: size = 3171
-XX62 N054 Q7_n inv params: size = 12155
+XX1 N009 N010 CLK N005 N013 NC_01 VCC GND d-ff
+XX2 N010 N011 CLK N006 N014 NC_02 VCC GND d-ff
+XX3 N011 N012 CLK N007 N015 NC_03 VCC GND d-ff
+XX4 N012 Q3 CLK N008 N016 NC_04 VCC GND d-ff
+XX5 Q3 N030 CLK N026 N033 NC_05 VCC GND d-ff
+XX6 N030 N031 CLK N027 N034 NC_06 VCC GND d-ff
+XX7 N031 N032 CLK N028 N035 NC_07 VCC GND d-ff
+XX8 N032 Q CLK N029 N036 Q_n VCC GND d-ff
+XX11 N001 PL N005 VCC GND nand2 params: size = 1
+XX12 N002 PL N006 VCC GND nand2 params: size = 1
+XX13 N003 PL N007 VCC GND nand2 params: size = 1
+XX14 N004 PL N008 VCC GND nand2 params: size = 1
+XX15 D0 N001 VCC GND schmitt
+XX16 D1 N002 VCC GND schmitt
+XX17 D2 N003 VCC GND schmitt
+XX18 D3 N004 VCC GND schmitt
+XX19 PL N017 N013 VCC GND nand2 params: size = 1
+XX20 PL N018 N014 VCC GND nand2 params: size = 1
+XX21 PL N019 N015 VCC GND nand2 params: size = 1
+XX22 PL N020 N016 VCC GND nand2 params: size = 1
+XX23 N001 N017 VCC GND inv params: size = 1
+XX24 N002 N018 VCC GND inv params: size = 1
+XX25 N003 N019 VCC GND inv params: size = 1
+XX26 N004 N020 VCC GND inv params: size = 1
+XX27 DS N009 VCC GND schmitt
+XX28 N022 PL N026 VCC GND nand2 params: size = 1
+XX29 N023 PL N027 VCC GND nand2 params: size = 1
+XX30 N024 PL N028 VCC GND nand2 params: size = 1
+XX31 N025 PL N029 VCC GND nand2 params: size = 1
+XX32 PL N040 N036 VCC GND nand2 params: size = 1
+XX33 PL N039 N035 VCC GND nand2 params: size = 1
+XX34 PL N038 N034 VCC GND nand2 params: size = 1
+XX35 PL N037 N033 VCC GND nand2 params: size = 1
+XX36 D4 N022 VCC GND schmitt
+XX37 D5 N023 VCC GND schmitt
+XX38 D6 N024 VCC GND schmitt
+XX39 D7 N025 VCC GND schmitt
+XX40 N022 N037 VCC GND inv params: size = 1
+XX41 N023 N038 VCC GND inv params: size = 1
+XX42 N024 N039 VCC GND inv params: size = 1
+XX43 N025 N040 VCC GND inv params: size = 1
+XX44 PL_n PL VCC GND inv params: size = 1
+XX9 CP N021 VCC GND inv params: size = 1
+XX10 N021 CLK VCC GND inv params: size = 4.405
+XX47 Q N041 VCC GND inv params: size = 1
+XX48 N041 N042 VCC GND inv params: size = 3.833
+XX49 N042 N043 VCC GND inv params: size = 14.69
+XX50 N043 N044 VCC GND inv params: size = 56.31
+XX51 N044 N045 VCC GND inv params: size = 215.9
+XX52 N045 N046 VCC GND inv params: size = 827.4
+XX53 N046 N047 VCC GND inv params: size = 3171
+XX54 N047 Q7 VCC GND inv params: size = 12155
+XX55 Q_n N048 VCC GND inv params: size = 1
+XX56 N048 N049 VCC GND inv params: size = 3.833
+XX57 N049 N050 VCC GND inv params: size = 14.69
+XX58 N050 N051 VCC GND inv params: size = 56.31
+XX59 N051 N052 VCC GND inv params: size = 215.9
+XX60 N052 N053 VCC GND inv params: size = 827.4
+XX61 N053 N054 VCC GND inv params: size = 3171
+XX62 N054 Q7_n VCC GND inv params: size = 12155
 .ends sr
 
-.subckt d-ff D Q CP SD_n RD_n Q_n
-XX1 CP RD_n N003 nand2 params: size = 1.21277
-XX2 CP SD_n N005 nand2 params: size = 1.21277
-XX3 N003 N005 N004 nor2 params: size = 1.78723
+.subckt d-ff D Q CP SD_n RD_n Q_n Vdd GND
+XX1 CP RD_n N003 Vdd GND nand2 params: size = 1.21277
+XX2 CP SD_n N005 Vdd GND nand2 params: size = 1.21277
 XX5 D N006 CK_n CK tg params: size = 1
 XX6 N006 N007 CK CK_n tg params: size = 1
-XX7 N006 N008 inv params: size = 1
-XX8 N008 N007 inv params: size = 1
+XX7 N006 N008 Vdd GND inv params: size = 1
+XX8 N008 N007 Vdd GND inv params: size = 1
 XX9 N008 N001 CK CK_n tg params: size = 1
 XX10 N001 N009 CK_n CK tg params: size = 1
-XX11 N001 N002 inv params: size = 1
-XX12 N002 N009 inv params: size = 1
-XX13 N002 Q_n inv params: size = 1
-XX14 N001 Q inv params: size = 1
-XX15 RD_n RD inv params: size = 1
-XX16 SD_n SD inv params: size = 1
-XX17 vdd N001 RD RD_n tg params: size = 1
-XX18 0 N001 SD SD_n tg params: size = 1
-XX19 vdd N002 SD SD_n tg params: size = 1
-XX20 0 N002 RD RD_n tg params: size = 1
-V1 vdd 0 3.3
-XX4 N004 CK_n inv params: size = 1
-XX21 N004 CK vdd 0 tg params: size = 1
+XX11 N001 N002 Vdd GND inv params: size = 1
+XX12 N002 N009 Vdd GND inv params: size = 1
+XX13 N002 Q_n Vdd GND inv params: size = 1
+XX14 N001 Q Vdd GND inv params: size = 1
+XX15 RD_n RD Vdd GND inv params: size = 1
+XX16 SD_n SD Vdd GND inv params: size = 1
+XX17 Vdd N001 RD RD_n tg params: size = 1
+XX18 GND N001 SD SD_n tg params: size = 1
+XX19 Vdd N002 SD SD_n tg params: size = 1
+XX20 GND N002 RD RD_n tg params: size = 1
+XX4 N004 CK_n Vdd GND inv params: size = 1
+XX21 N004 CK Vdd GND tg params: size = 1
+XX3 N003 N005 N004 Vdd GND nor2 params: size = 1.78723
 .ends d-ff
 
-.subckt nand2 I1 I2 O
-V1 vdd 0 3.3
-M1 O I1 N001 0 NM l=0.35u w={size*0.35u}
-M2 N001 I2 0 0 NM l=0.35u w={size*0.35u}
-M3 O I1 vdd vdd PM l=0.35u w={3.7*size*0.35u}
-M4 O I2 vdd vdd PM l=0.35u w={3.7*size*0.35u}
+.subckt nand2 I1 I2 O Vdd GND
+M1 O I1 N001 GND NM l=0.35u w={size*0.35u}
+M2 N001 I2 GND GND NM l=0.35u w={size*0.35u}
+M3 O I1 Vdd Vdd PM l=0.35u w={3.7*size*0.35u}
+M4 O I2 Vdd Vdd PM l=0.35u w={3.7*size*0.35u}
 .include ee457_035.lib
 .param size=1
 .ends nand2
 
-.subckt schmitt I O
-M1 N001 I 0 0 NM l=0.35u w={10*0.35u}
-M2 N001 I vdd vdd PM l=0.35u w={3.7*10*0.35u}
-M3 N001 O 0 0 NM l=0.35u w=0.35u
-M4 N001 O vdd vdd PM l=0.35u w={5*3.7*0.35u}
-M5 O N001 0 0 NM l=0.35u w={5*0.35u}
-M6 O N001 vdd vdd PM l=0.35u w={3.7*0.35u}
-V1 vdd 0 3.3
+.subckt schmitt I O Vdd GND
+M1 N001 I GND GND NM l=0.35u w={10*0.35u}
+M2 N001 I Vdd Vdd PM l=0.35u w={3.7*10*0.35u}
+M3 N001 O GND GND NM l=0.35u w=0.35u
+M4 N001 O Vdd Vdd PM l=0.35u w={5*3.7*0.35u}
+M5 O N001 GND GND NM l=0.35u w={5*0.35u}
+M6 O N001 Vdd Vdd PM l=0.35u w={3.7*0.35u}
 .include ee457_035.lib
 .ends schmitt
 
-.subckt inv I O
-M1 O I 0 0 NM l=0.35u w={0.35u*size}
-M2 O I vdd vdd PM l=0.35u w={3.7*size*0.35u}
-V1 vdd 0 3.3
+.subckt inv I O Vdd GND
+M1 O I GND GND NM l=0.35u w={0.35u*size}
+M2 O I Vdd Vdd PM l=0.35u w={3.7*size*0.35u}
 .include ee457_035.lib
 .param size=1
 .ends inv
-
-.subckt nor2 I1 I2 O
-M1 O I1 0 0 NM l=0.35u w={size*0.35u}
-M2 O I2 0 0 NM l=0.35u w={size*0.35u}
-M3 O I2 N001 vdd PM l=0.35u w={3.7*size*0.35u}
-M4 N001 I1 vdd vdd PM l=0.35u w={3.7*size*0.35u}
-V1 vdd 0 3.3
-.include ee457_035.lib
-.param size = 1
-.ends nor2
 
 .subckt tg I O CLK CLK_n
 M1 I CLK O 0 NM l=0.35u w={size*0.35u}
@@ -140,9 +128,18 @@ V1 vdd 0 3.3
 .param size=1
 .ends tg
 
+.subckt nor2 I1 I2 O Vdd GND
+M1 O I1 GND GND NM l=0.35u w={size*0.35u}
+M2 O I2 GND GND NM l=0.35u w={size*0.35u}
+M3 O I2 N001 Vdd PM l=0.35u w={3.7*size*0.35u}
+M4 N001 I1 Vdd Vdd PM l=0.35u w={3.7*size*0.35u}
+.include ee457_035.lib
+.param size = 1
+.ends nor2
+
 .model NMOS NMOS
 .model PMOS PMOS
 .lib C:\Users\Server\Documents\LTspiceXVII\lib\cmp\standard.mos
-.tran 0.5u
+.tran 0.2u
 .backanno
 .end

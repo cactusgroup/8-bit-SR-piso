@@ -972,29 +972,24 @@ Gmin = 2.70769e-013
 Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
-Ignoring empty pin current: Ix(x1:gnd)
 Ignoring empty pin current: Ix(x1:ce_n)
-Ignoring empty pin current: Ix(x1:vcc)
-Ignoring empty pin current: Ix(x1:gnd)
 Ignoring empty pin current: Ix(x1:ce_n)
-Ignoring empty pin current: Ix(x1:vcc)
-Heightened Def Con from 4.88281e-015 to 5.49321e-010
 
-Date: Wed May 04 21:04:45 2022
-Total elapsed time: 12.924 seconds.
+Date: Mon May 09 19:28:06 2022
+Total elapsed time: 16.826 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 25288
-traniter = 24775
-tranpoints = 7630
-accept = 5610
-rejected = 2021
-matrix size = 683
-fillins = 436
+totiter = 13823
+traniter = 13320
+tranpoints = 4552
+accept = 3454
+rejected = 1098
+matrix size = 371
+fillins = 450
 solver = Normal
-Thread vector: 489.6/400.3[4] 81.8/102.9[1] 39.7/32.0[4] 4.0/5.5[1]  2592/500
-Matrix Compiler1: 87.94 KB object code size  35.6/25.9/[7.9]
-Matrix Compiler2: 74.26 KB object code size  19.5/27.8/[9.5]
+Thread vector: 419.6/339.2[4] 1291.5/153.9[4] 44.2/35.0[4] 3.0/5.4[1]  2592/500
+Matrix Compiler1: 80.38 KB object code size  46.8/64.0/[10.0]
+Matrix Compiler2: 52.43 KB object code size  13.3/9.7/[6.0]
 
